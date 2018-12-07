@@ -55,5 +55,11 @@ Public Class MDIEntrada
 
     End Sub
 
+    Private Sub ClientesDosClientesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClientesDosClientesToolStripMenuItem.Click
 
+        FormCadConsignees.MdiParent = Me
+        FormCadConsignees.Show()
+        FormCadConsignees.BringToFront()
+
+    End Sub
 End Class

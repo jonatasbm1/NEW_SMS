@@ -66,7 +66,7 @@ Partial Class MDIEntrada
         '
         Me.SistemaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UnidadeDeMedidaToolStripMenuItem, Me.TiposToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ClientesDosClientesToolStripMenuItem, Me.CritérioDeTaxaToolStripMenuItem})
         Me.SistemaToolStripMenuItem.Name = "SistemaToolStripMenuItem"
-        Me.SistemaToolStripMenuItem.Size = New System.Drawing.Size(121, 22)
+        Me.SistemaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SistemaToolStripMenuItem.Text = "System"
         '
         'UnidadeDeMedidaToolStripMenuItem
@@ -106,7 +106,7 @@ Partial Class MDIEntrada
         '
         Me.ProdutosToolStripMenuItem.ForeColor = System.Drawing.Color.Red
         Me.ProdutosToolStripMenuItem.Name = "ProdutosToolStripMenuItem"
-        Me.ProdutosToolStripMenuItem.Size = New System.Drawing.Size(121, 22)
+        Me.ProdutosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ProdutosToolStripMenuItem.Text = "Products"
         '
         'ConsultasToolStripMenuItem
