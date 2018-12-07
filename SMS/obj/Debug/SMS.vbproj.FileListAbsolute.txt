@@ -1,0 +1,72 @@
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\bin\Debug\SMS.exe.config
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\bin\Debug\SMS.exe
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\bin\Debug\SMS.pdb
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\bin\Debug\SMS.xml
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.FormConsultaBase.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.MDIEntrada.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.Resources.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.vbproj.GenerateResource.Cache
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.exe
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.xml
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.pdb
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.vbprojResolveAssemblyReference.cache
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\bin\Debug\Microsoft.Office.Interop.Excel.dll
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\bin\Debug\Office.dll
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\bin\Debug\stdole.dll
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\bin\Debug\Microsoft.Office.Interop.Excel.xml
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\bin\Debug\Office.xml
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\bin\Debug\SMS.exe.config
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\bin\Debug\SMS.exe
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\bin\Debug\SMS.pdb
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\bin\Debug\SMS.xml
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\bin\Debug\stdole.dll
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.vbprojAssemblyReference.cache
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.FormConsultaBase.resources
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.MDIEntrada.resources
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.Resources.resources
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.vbproj.GenerateResource.cache
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.vbproj.CoreCompileInputs.cache
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.vbproj.CopyComplete
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.exe
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.xml
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.pdb
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.FormRptMediaSemanal.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.FormCadType.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.FormCadEmBranco.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.FormCadUq.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.FormCadLocation.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.FormCadPattern.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.FormLocalizar.resources
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.FormCadPattern.resources
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.FormCadEmBranco.resources
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.FormCadLocation.resources
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.FormCadUq.resources
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.FormCadType.resources
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.FormLocalizar.resources
+C:\Sistemas\NOVO SISTEMAS\NOVO SISTEMAS\SMS\SMS\obj\Debug\SMS.FormRptMediaSemanal.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\bin\Debug\SMS.exe.config
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\bin\Debug\SMS.exe
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\bin\Debug\SMS.pdb
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\bin\Debug\SMS.xml
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\bin\Debug\Microsoft.Office.Interop.Excel.dll
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\bin\Debug\Office.dll
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\bin\Debug\stdole.dll
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\bin\Debug\Microsoft.Office.Interop.Excel.xml
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\bin\Debug\Office.xml
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.vbprojResolveAssemblyReference.cache
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.FormCadPattern.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.FormCadEmBranco.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.FormCadLocation.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.FormCadUq.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.FormConsultaBase.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.FormCadType.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.FormLocalizar.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.FormRptMediaSemanal.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.MDIEntrada.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.Resources.resources
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.vbproj.GenerateResource.Cache
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.exe
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.xml
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.pdb

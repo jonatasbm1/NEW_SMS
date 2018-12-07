@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7876060-1282-4CA2-A9DB-58C0EFC1D1ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SMS.My.MyApplication</StartupObject>
+    <RootNamespace>SMS</RootNamespace>
+    <AssemblyName>SMS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icone.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Office, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLASSES\ClassFormCadLocation.vb" />
+    <Compile Include="CLASSES\ClassFormCadPattern.vb" />
+    <Compile Include="CLASSES\ClassFormCadUq.vb" />
+    <Compile Include="CLASSES\ClassFormCadType.vb" />
+    <Compile Include="FormCadPattern.Designer.vb">
+      <DependentUpon>FormCadPattern.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadPattern.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadEmBranco.Designer.vb">
+      <DependentUpon>FormCadEmBranco.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadEmBranco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadLocation.Designer.vb">
+      <DependentUpon>FormCadLocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadLocation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadUq.Designer.vb">
+      <DependentUpon>FormCadUq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadUq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaBase.Designer.vb">
+      <DependentUpon>FormConsultaBase.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadType.Designer.vb">
+      <DependentUpon>FormCadType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLocalizar.Designer.vb">
+      <DependentUpon>FormLocalizar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLocalizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRptMediaSemanal.Designer.vb">
+      <DependentUpon>FormRptMediaSemanal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRptMediaSemanal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIEntrada.Designer.vb">
+      <DependentUpon>MDIEntrada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIEntrada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\Geral.vb" />
+    <Compile Include="Modulos\MigraDadosAntigo.vb" />
+    <Compile Include="Modulos\ModuleConexao.vb" />
+    <Compile Include="CLASSES\ClassConsultaGeral.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormCadPattern.resx">
+      <DependentUpon>FormCadPattern.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadEmBranco.resx">
+      <DependentUpon>FormCadEmBranco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadLocation.resx">
+      <DependentUpon>FormCadLocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadUq.resx">
+      <DependentUpon>FormCadUq.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaBase.resx">
+      <DependentUpon>FormConsultaBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadType.resx">
+      <DependentUpon>FormCadType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLocalizar.resx">
+      <DependentUpon>FormLocalizar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRptMediaSemanal.resx">
+      <DependentUpon>FormRptMediaSemanal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIEntrada.resx">
+      <DependentUpon>MDIEntrada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RELATORIOS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icone.ico" />
+    <None Include="IMAGENS\icons8-cancelar-48.png" />
+    <None Include="IMAGENS\icons8-editar-64.png" />
+    <None Include="IMAGENS\icons8-adicionar-48.png" />
+    <None Include="IMAGENS\icons8-toque-100.png" />
+    <None Include="Resources\novo plano de fundo1.PNG" />
+    <None Include="IMAGENS\icons8-ms-excel-48.png" />
+    <None Include="IMAGENS\icons8-filtro-40.png" />
+    <None Include="IMAGENS\icons8-localizar-e-substituir-40.png" />
+    <None Include="IMAGENS\Logo Geral.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
