@@ -66,47 +66,47 @@ Partial Class MDIEntrada
         '
         Me.SistemaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UnidadeDeMedidaToolStripMenuItem, Me.TiposToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ClientesDosClientesToolStripMenuItem, Me.CritérioDeTaxaToolStripMenuItem})
         Me.SistemaToolStripMenuItem.Name = "SistemaToolStripMenuItem"
-        Me.SistemaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SistemaToolStripMenuItem.Size = New System.Drawing.Size(121, 22)
         Me.SistemaToolStripMenuItem.Text = "System"
         '
         'UnidadeDeMedidaToolStripMenuItem
         '
         Me.UnidadeDeMedidaToolStripMenuItem.Name = "UnidadeDeMedidaToolStripMenuItem"
-        Me.UnidadeDeMedidaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UnidadeDeMedidaToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.UnidadeDeMedidaToolStripMenuItem.Text = "UQ"
         '
         'TiposToolStripMenuItem
         '
         Me.TiposToolStripMenuItem.Name = "TiposToolStripMenuItem"
-        Me.TiposToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.TiposToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.TiposToolStripMenuItem.Text = "Type"
         '
         'ClientesToolStripMenuItem
         '
         Me.ClientesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.ClientesToolStripMenuItem.Text = "Customers"
         '
         'ClientesDosClientesToolStripMenuItem
         '
         Me.ClientesDosClientesToolStripMenuItem.ForeColor = System.Drawing.Color.Red
         Me.ClientesDosClientesToolStripMenuItem.Name = "ClientesDosClientesToolStripMenuItem"
-        Me.ClientesDosClientesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ClientesDosClientesToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.ClientesDosClientesToolStripMenuItem.Text = "Consignees"
         '
         'CritérioDeTaxaToolStripMenuItem
         '
         Me.CritérioDeTaxaToolStripMenuItem.ForeColor = System.Drawing.Color.Red
         Me.CritérioDeTaxaToolStripMenuItem.Name = "CritérioDeTaxaToolStripMenuItem"
-        Me.CritérioDeTaxaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CritérioDeTaxaToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.CritérioDeTaxaToolStripMenuItem.Text = "Charges Criteria"
         '
         'ProdutosToolStripMenuItem
         '
         Me.ProdutosToolStripMenuItem.ForeColor = System.Drawing.Color.Red
         Me.ProdutosToolStripMenuItem.Name = "ProdutosToolStripMenuItem"
-        Me.ProdutosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ProdutosToolStripMenuItem.Size = New System.Drawing.Size(121, 22)
         Me.ProdutosToolStripMenuItem.Text = "Products"
         '
         'ConsultasToolStripMenuItem
@@ -163,8 +163,8 @@ Partial Class MDIEntrada
         'TesteToolStripMenuItem
         '
         Me.TesteToolStripMenuItem.Name = "TesteToolStripMenuItem"
-        Me.TesteToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
-        Me.TesteToolStripMenuItem.Text = "Test"
+        Me.TesteToolStripMenuItem.Size = New System.Drawing.Size(56, 20)
+        Me.TesteToolStripMenuItem.Text = "Teste 2"
         '
         'MDIEntrada
         '
