@@ -158,7 +158,7 @@ Partial Class MDIEntrada
         '
         Me.PensarEmMaisRelatóriosToolStripMenuItem.Name = "PensarEmMaisRelatóriosToolStripMenuItem"
         Me.PensarEmMaisRelatóriosToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
-        Me.PensarEmMaisRelatóriosToolStripMenuItem.Text = "???"
+        Me.PensarEmMaisRelatóriosToolStripMenuItem.Text = "??? "
         '
         'TesteToolStripMenuItem
         '
