@@ -141,7 +141,7 @@ Class ClassConsultaGeral
         If excelA.Worksheets.Count = 1 Then
 
             Esheet = excelA.Worksheets(1)
-            Esheet.Name = "Novo Relatório"
+            Esheet.Name = "New Report"
 
         Else
 
@@ -150,7 +150,7 @@ Class ClassConsultaGeral
             Esheet = excelA.Worksheets(2)
             Esheet.Delete()
             Esheet = excelA.Worksheets(1)
-            Esheet.Name = "Novo Relatório"
+            Esheet.Name = "New Report"
 
         End If
 
@@ -172,7 +172,7 @@ Class ClassConsultaGeral
 
         LabelStatus.Text = ""
         LabelStatus.Visible = True
-        LabelStatus.Text = "Exportando Linha " & Barra.Value & " de " & MaxRegistros
+        LabelStatus.Text = "Exporting Row " & Barra.Value & " de " & MaxRegistros
 
         Application.DoEvents()
 
@@ -187,7 +187,7 @@ Class ClassConsultaGeral
 
             Barra.Increment(+1)
 
-            LabelStatus.Text = "Exportando Linha " & Barra.Value & " de " & MaxRegistros
+            LabelStatus.Text = "Exporting Row " & Barra.Value & " de " & MaxRegistros
 
             Application.DoEvents()
 
@@ -206,7 +206,7 @@ Class ClassConsultaGeral
 
                 Barra.Increment(+1)
 
-                LabelStatus.Text = "Exportando Linha " & Barra.Value & " de " & MaxRegistros
+                LabelStatus.Text = "Exporting Row  " & Barra.Value & " de " & MaxRegistros
 
                 Application.DoEvents()
 
@@ -248,7 +248,7 @@ Class ClassConsultaGeral
 
                     Barra.Increment(+1)
 
-                    LabelStatus.Text = "Exportando Linha " & Barra.Value & " de " & MaxRegistros
+                    LabelStatus.Text = "Exporting Row " & Barra.Value & " od " & MaxRegistros
 
                     Application.DoEvents()
 

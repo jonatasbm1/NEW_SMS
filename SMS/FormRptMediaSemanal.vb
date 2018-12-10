@@ -9,7 +9,7 @@ Public Class FormRptMediaSemanal
         PbExportTempMedio.Value = 0
         LabelExportStatus.Text = ""
 
-        MsgBox("Concluido")
+        MsgBox("Job done")
 
     End Sub
 
