@@ -163,8 +163,8 @@ Partial Class MDIEntrada
         'TesteToolStripMenuItem
         '
         Me.TesteToolStripMenuItem.Name = "TesteToolStripMenuItem"
-        Me.TesteToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
-        Me.TesteToolStripMenuItem.Text = "Test"
+        Me.TesteToolStripMenuItem.Size = New System.Drawing.Size(123, 20)
+        Me.TesteToolStripMenuItem.Text = "teste de Repositorio"
         Me.TesteToolStripMenuItem.Visible = False
         '
         'MDIEntrada
