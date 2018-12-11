@@ -51,7 +51,7 @@ Partial Class MDIEntrada
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CadastroToolStripMenuItem, Me.ConsultasToolStripMenuItem, Me.RelatóriosToolStripMenuItem, Me.TesteToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1370, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1727, 24)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -90,7 +90,7 @@ Partial Class MDIEntrada
         '
         'ClientesDosClientesToolStripMenuItem
         '
-        Me.ClientesDosClientesToolStripMenuItem.ForeColor = System.Drawing.Color.Red
+        Me.ClientesDosClientesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText
         Me.ClientesDosClientesToolStripMenuItem.Name = "ClientesDosClientesToolStripMenuItem"
         Me.ClientesDosClientesToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.ClientesDosClientesToolStripMenuItem.Text = "Consignees"
@@ -173,7 +173,7 @@ Partial Class MDIEntrada
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.SMS.My.Resources.Resources.novo_plano_de_fundo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1370, 741)
+        Me.ClientSize = New System.Drawing.Size(1727, 741)
         Me.Controls.Add(Me.MenuStrip1)
         Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
