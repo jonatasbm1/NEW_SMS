@@ -379,7 +379,7 @@ Public Class ClassFormCadPattern
         Dim sql As String
 
         sql = ""
-        sql = sql & vbCrLf & "DELETE TBL_TYPE"
+        sql = sql & vbCrLf & "DELETE TBL_CONTACT"
         sql = sql & vbCrLf & "WHERE ID = " & Grid.Cells("ColumnID").Value
 
         Command = New SqlCommand(sql, conn)

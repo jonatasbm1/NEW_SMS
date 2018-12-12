@@ -84,6 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CLASSES\ClassFormCadLocation.vb" />
+    <Compile Include="CLASSES\ClassFormCadConsignees.vb" />
     <Compile Include="CLASSES\ClassFormCadPattern.vb" />
     <Compile Include="CLASSES\ClassFormCadUq.vb" />
     <Compile Include="CLASSES\ClassFormCadType.vb" />
