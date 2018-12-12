@@ -24,7 +24,7 @@ Public Class FormCadConsignees
         ModoAdd = 0
 
         CarregaCliente(ComboBoxCliente)
-        CarregaGridConsignees(DataGridViewConsignees)
+        'CarregaGridConsignees(DataGridViewConsignees, ComboBoxCliente.SelectedValue)
 
     End Sub
 
@@ -32,12 +32,12 @@ Public Class FormCadConsignees
 
         If ComboBoxCliente.SelectedValue Is Nothing Then
 
-            MsgBox("É necessário selecionar um cliente antes de continuar")
+            MsgBox("You must select a client before continuing")
             Exit Sub
 
         ElseIf TextBoxParceiro.Text = "" Then
 
-            MsgBox("É necessário descrever um nome para o consigness atens de continuar")
+            MsgBox("It's necessary to describe a name for the consignees before continuing")
             Exit Sub
 
         End If
@@ -46,7 +46,7 @@ Public Class FormCadConsignees
             NovoConsignees()
         ElseIf ModoEdit = 1 Then
             UpdateConsignees(ComboBoxConsignees.SelectedValue)
-            CarregaGridConsignees(DataGridViewConsignees)
+            CarregaGridConsignees(DataGridViewConsignees, ComboBoxCliente.SelectedValue)
         End If
 
     End Sub
@@ -56,13 +56,14 @@ Public Class FormCadConsignees
         ComboBoxConsignees.Items.Clear()
         TextBoxDescricao.Text = ""
         CarregaConsignees(ComboBoxConsignees, ComboBoxCliente.SelectedValue)
+        CarregaGridConsignees(DataGridViewConsignees, ComboBoxCliente.SelectedValue)
 
     End Sub
 
     Private Sub ExcluirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExcluirToolStripMenuItem.Click
 
         RemoveConsignees(ComboBoxConsignees.SelectedValue)
-        CarregaGridConsignees(DataGridViewConsignees)
+        CarregaGridConsignees(DataGridViewConsignees, ComboBoxConsignees.SelectedValue)
 
     End Sub
 
@@ -70,9 +71,9 @@ Public Class FormCadConsignees
 
         If TabControl1.SelectedTab.Name = "TabPage1" Then
 
-            If DataGridViewConsignees.CurrentRow.Cells("ColumnConsigness").Value.ToString = Nothing Then
+            If DataGridViewConsignees.CurrentRow.Cells("ColumnConsigness").Value = Nothing Then
 
-                MsgBox("Favor Selecionar um Consignees antes de Continuar")
+                MsgBox("Please select a consignees before proceeding")
                 Exit Sub
 
             Else
@@ -85,7 +86,7 @@ Public Class FormCadConsignees
 
             If DataGridViewConsignees.CurrentRow.Cells("ColumnConsigness").Value.ToString = Nothing Then
 
-                MsgBox("Favor Selecionar um Consignees antes de Continuar")
+                MsgBox("Please select a consignees before proceeding")
                 Exit Sub
 
             Else
@@ -196,7 +197,30 @@ Public Class FormCadConsignees
         DataGridViewAdress.AllowUserToAddRows = False
         DataGridViewAdress.AllowUserToDeleteRows = False
 
-        F2AperteParaAbilitarAEdiçãoToolStripMenuItem.Text = "F3 - Aperte para Abilitar a Edição"
+        F2AperteParaAbilitarAEdiçãoToolStripMenuItem.Text = "F3 - Press to enable editing"
+
+    End Sub
+
+    Private Sub TabControl_Selected(sender As Object, e As TabControlEventArgs) Handles TabControl.Selected
+
+        Dim dt, dt2 As DataTable
+
+        If TabControl.SelectedTab.Name = "TabPagePesquisa" Then
+            F2AperteParaAbilitarAEdiçãoToolStripMenuItem.Enabled = True
+            ExportarToolStripMenuItem.Enabled = True
+        ElseIf TabControl.SelectedTab.Name = "TabPageCad" Then
+            F2AperteParaAbilitarAEdiçãoToolStripMenuItem.Enabled = False
+            ExportarToolStripMenuItem.Enabled = False
+
+            dt = DataGridViewContact.DataSource
+            dt.Rows.Clear()
+            DataGridViewContact.DataSource = dt
+
+            dt2 = DataGridViewAdress.DataSource
+            dt2.Rows.Clear()
+            DataGridViewAdress.DataSource = dt2
+
+        End If
 
     End Sub
 End Class

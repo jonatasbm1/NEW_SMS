@@ -519,7 +519,7 @@ Public Class ClassFormCadConsignees
 
     End Sub
 
-    Public Shared Sub CarregaGridConsignees(Grid As DataGridView)
+    Public Shared Sub CarregaGridConsignees(Grid As DataGridView, ID As Long)
 
         Dim sql As String
         Dim da As SqlDataAdapter
@@ -530,6 +530,7 @@ Public Class ClassFormCadConsignees
         sql = sql & vbCrLf & "       T.NOME,"
         sql = sql & vbCrLf & "	     T.DESCRICAO"
         sql = sql & vbCrLf & "FROM TBL_CONSIGNATARIO T"
+        sql = sql & vbCrLf & "WHERE T.ID_CLIENTE  = " & ID
 
         da = New SqlDataAdapter(sql, conn)
         dt = New DataTable
