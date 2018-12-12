@@ -71,3 +71,26 @@ C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.exe
 C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.xml
 C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.pdb
 C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.FormCadConsignees.resources
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\bin\Debug\SMS.exe.config
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\bin\Debug\SMS.exe
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\bin\Debug\SMS.pdb
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\bin\Debug\SMS.xml
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\bin\Debug\stdole.dll
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.vbprojAssemblyReference.cache
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.FormCadConsignees.resources
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.FormCadPattern.resources
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.FormCadEmBranco.resources
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.FormCadLocation.resources
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.FormCadUq.resources
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.FormConsultaBase.resources
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.FormCadType.resources
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.FormLocalizar.resources
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.FormRptMediaSemanal.resources
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.MDIEntrada.resources
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.Resources.resources
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.vbproj.GenerateResource.cache
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.vbproj.CoreCompileInputs.cache
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.vbproj.CopyComplete
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.exe
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.xml
+C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.pdb
