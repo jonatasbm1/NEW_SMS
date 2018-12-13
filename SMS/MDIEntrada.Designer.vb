@@ -32,7 +32,7 @@ Partial Class MDIEntrada
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesDosClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CritérioDeTaxaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProdutosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProductsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsultasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ColsultaGeralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LocaisDeEstoqueToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -57,14 +57,14 @@ Partial Class MDIEntrada
         '
         'CadastroToolStripMenuItem
         '
-        Me.CadastroToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SistemaToolStripMenuItem, Me.ProdutosToolStripMenuItem})
+        Me.CadastroToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SistemaToolStripMenuItem})
         Me.CadastroToolStripMenuItem.Name = "CadastroToolStripMenuItem"
         Me.CadastroToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.CadastroToolStripMenuItem.Text = "Register"
         '
         'SistemaToolStripMenuItem
         '
-        Me.SistemaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UnidadeDeMedidaToolStripMenuItem, Me.TiposToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ClientesDosClientesToolStripMenuItem, Me.CritérioDeTaxaToolStripMenuItem})
+        Me.SistemaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UnidadeDeMedidaToolStripMenuItem, Me.TiposToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.ClientesDosClientesToolStripMenuItem, Me.CritérioDeTaxaToolStripMenuItem, Me.ProductsToolStripMenuItem})
         Me.SistemaToolStripMenuItem.Name = "SistemaToolStripMenuItem"
         Me.SistemaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SistemaToolStripMenuItem.Text = "System"
@@ -102,12 +102,11 @@ Partial Class MDIEntrada
         Me.CritérioDeTaxaToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.CritérioDeTaxaToolStripMenuItem.Text = "Charges Criteria"
         '
-        'ProdutosToolStripMenuItem
+        'ProductsToolStripMenuItem
         '
-        Me.ProdutosToolStripMenuItem.ForeColor = System.Drawing.Color.Red
-        Me.ProdutosToolStripMenuItem.Name = "ProdutosToolStripMenuItem"
-        Me.ProdutosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ProdutosToolStripMenuItem.Text = "Products"
+        Me.ProductsToolStripMenuItem.Name = "ProductsToolStripMenuItem"
+        Me.ProductsToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
+        Me.ProductsToolStripMenuItem.Text = "Products"
         '
         'ConsultasToolStripMenuItem
         '
@@ -195,7 +194,6 @@ Partial Class MDIEntrada
     Friend WithEvents SistemaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UnidadeDeMedidaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TiposToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ProdutosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ConsultasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ColsultaGeralToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PensarEmMaisConsultasToolStripMenuItem As ToolStripMenuItem
@@ -208,4 +206,5 @@ Partial Class MDIEntrada
     Friend WithEvents LocaisDeEstoqueToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TesteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CritérioDeTaxaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ProductsToolStripMenuItem As ToolStripMenuItem
 End Class

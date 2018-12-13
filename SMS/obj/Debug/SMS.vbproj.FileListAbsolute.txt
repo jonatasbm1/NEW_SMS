@@ -94,3 +94,4 @@ C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.vbproj.CopyComplete
 C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.exe
 C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.xml
 C:\Users\tempuser\source\repos\NEW_SMS\SMS\obj\Debug\SMS.pdb
+C:\SISTEMAS\NOVO SISTEMAS\SMS\NEW_SMS\SMS\obj\Debug\SMS.FormCadProducts.resources

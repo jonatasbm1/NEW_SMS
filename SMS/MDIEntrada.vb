@@ -62,4 +62,12 @@ Public Class MDIEntrada
         FormCadConsignees.BringToFront()
 
     End Sub
+
+    Private Sub ProductsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProductsToolStripMenuItem.Click
+
+        FormCadProducts.MdiParent = Me
+        FormCadProducts.Show()
+        FormCadProducts.BringToFront()
+
+    End Sub
 End Class

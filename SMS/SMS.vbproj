@@ -86,6 +86,7 @@
     <Compile Include="CLASSES\ClassFormCadLocation.vb" />
     <Compile Include="CLASSES\ClassFormCadConsignees.vb" />
     <Compile Include="CLASSES\ClassFormCadPattern.vb" />
+    <Compile Include="CLASSES\ClassFormCadProducts.vb" />
     <Compile Include="CLASSES\ClassFormCadUq.vb" />
     <Compile Include="CLASSES\ClassFormCadType.vb" />
     <Compile Include="FormCadConsignees .Designer.vb">
@@ -110,6 +111,12 @@
       <DependentUpon>FormCadLocation.vb</DependentUpon>
     </Compile>
     <Compile Include="FormCadLocation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadProducts.Designer.vb">
+      <DependentUpon>FormCadProducts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadProducts.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormCadUq.Designer.vb">
@@ -181,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCadLocation.resx">
       <DependentUpon>FormCadLocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadProducts.resx">
+      <DependentUpon>FormCadProducts.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCadUq.resx">
       <DependentUpon>FormCadUq.vb</DependentUpon>
