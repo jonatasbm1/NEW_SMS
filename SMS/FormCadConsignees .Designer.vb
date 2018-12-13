@@ -32,6 +32,9 @@ Partial Class FormCadConsignees
         Me.TabControl = New System.Windows.Forms.TabControl()
         Me.TabPagePesquisa = New System.Windows.Forms.TabPage()
         Me.DataGridViewConsignees = New System.Windows.Forms.DataGridView()
+        Me.ColumnCid = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColumnConsigness = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ColumnDescrConsig = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.LocalizarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
@@ -87,9 +90,6 @@ Partial Class FormCadConsignees
         Me.ColumnATel2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColumnATel3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColumnObs = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColumnCid = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColumnConsigness = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColumnDescrConsig = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1.SuspendLayout()
         Me.TabControl.SuspendLayout()
         Me.TabPagePesquisa.SuspendLayout()
@@ -114,7 +114,7 @@ Partial Class FormCadConsignees
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Navy
-        Me.Label1.Location = New System.Drawing.Point(484, 30)
+        Me.Label1.Location = New System.Drawing.Point(505, 30)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(313, 37)
         Me.Label1.TabIndex = 63
@@ -136,8 +136,8 @@ Partial Class FormCadConsignees
         '
         Me.TabControl.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TabControl.Controls.Add(Me.TabPageCad)
         Me.TabControl.Controls.Add(Me.TabPagePesquisa)
+        Me.TabControl.Controls.Add(Me.TabPageCad)
         Me.TabControl.Location = New System.Drawing.Point(6, 19)
         Me.TabControl.Name = "TabControl"
         Me.TabControl.SelectedIndex = 0
@@ -174,6 +174,30 @@ Partial Class FormCadConsignees
         Me.DataGridViewConsignees.ReadOnly = True
         Me.DataGridViewConsignees.Size = New System.Drawing.Size(1314, 240)
         Me.DataGridViewConsignees.TabIndex = 1
+        '
+        'ColumnCid
+        '
+        Me.ColumnCid.DataPropertyName = "ID"
+        Me.ColumnCid.HeaderText = "id"
+        Me.ColumnCid.Name = "ColumnCid"
+        Me.ColumnCid.ReadOnly = True
+        Me.ColumnCid.Visible = False
+        '
+        'ColumnConsigness
+        '
+        Me.ColumnConsigness.DataPropertyName = "NOME"
+        Me.ColumnConsigness.HeaderText = "Consigness"
+        Me.ColumnConsigness.Name = "ColumnConsigness"
+        Me.ColumnConsigness.ReadOnly = True
+        Me.ColumnConsigness.Width = 300
+        '
+        'ColumnDescrConsig
+        '
+        Me.ColumnDescrConsig.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.ColumnDescrConsig.DataPropertyName = "DESCRICAO"
+        Me.ColumnDescrConsig.HeaderText = "Descrição do Consignees"
+        Me.ColumnDescrConsig.Name = "ColumnDescrConsig"
+        Me.ColumnDescrConsig.ReadOnly = True
         '
         'MenuStrip1
         '
@@ -229,9 +253,9 @@ Partial Class FormCadConsignees
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(6, 141)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(116, 13)
+        Me.Label3.Size = New System.Drawing.Size(127, 13)
         Me.Label3.TabIndex = 68
-        Me.Label3.Text = "Consignees description"
+        Me.Label3.Text = "Descrição do Consigness"
         '
         'TextBoxDescricao
         '
@@ -255,9 +279,9 @@ Partial Class FormCadConsignees
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(9, 48)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(51, 13)
+        Me.Label6.Size = New System.Drawing.Size(39, 13)
         Me.Label6.TabIndex = 12
-        Me.Label6.Text = "Customer"
+        Me.Label6.Text = "Cliente"
         '
         'ButtonCancelarCad
         '
@@ -267,7 +291,7 @@ Partial Class FormCadConsignees
         Me.ButtonCancelarCad.Name = "ButtonCancelarCad"
         Me.ButtonCancelarCad.Size = New System.Drawing.Size(189, 23)
         Me.ButtonCancelarCad.TabIndex = 11
-        Me.ButtonCancelarCad.Text = "Undo / Editing"
+        Me.ButtonCancelarCad.Text = "Cancelar Cadastro / Edição"
         Me.ButtonCancelarCad.UseVisualStyleBackColor = True
         '
         'ButtonSalvar
@@ -278,7 +302,7 @@ Partial Class FormCadConsignees
         Me.ButtonSalvar.Name = "ButtonSalvar"
         Me.ButtonSalvar.Size = New System.Drawing.Size(189, 23)
         Me.ButtonSalvar.TabIndex = 10
-        Me.ButtonSalvar.Text = "Salve"
+        Me.ButtonSalvar.Text = "Salvar"
         Me.ButtonSalvar.UseVisualStyleBackColor = True
         '
         'ComboBoxCliente
@@ -294,9 +318,9 @@ Partial Class FormCadConsignees
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(6, 92)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(57, 13)
+        Me.Label2.Size = New System.Drawing.Size(92, 13)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Consignee"
+        Me.Label2.Text = "Nome do Parceiro"
         '
         'TextBoxParceiro
         '
@@ -319,8 +343,8 @@ Partial Class FormCadConsignees
         '
         Me.NovoCadastroToolStripMenuItem.Image = Global.SMS.My.Resources.Resources.icons8_adicionar_48
         Me.NovoCadastroToolStripMenuItem.Name = "NovoCadastroToolStripMenuItem"
-        Me.NovoCadastroToolStripMenuItem.Size = New System.Drawing.Size(99, 20)
-        Me.NovoCadastroToolStripMenuItem.Text = "New Record"
+        Me.NovoCadastroToolStripMenuItem.Size = New System.Drawing.Size(114, 20)
+        Me.NovoCadastroToolStripMenuItem.Text = "Novo Cadastro"
         '
         'ToolStripMenuItem1
         '
@@ -332,8 +356,8 @@ Partial Class FormCadConsignees
         '
         Me.EditarToolStripMenuItem.Image = Global.SMS.My.Resources.Resources.icons8_editar_64
         Me.EditarToolStripMenuItem.Name = "EditarToolStripMenuItem"
-        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(55, 20)
-        Me.EditarToolStripMenuItem.Text = "Edit"
+        Me.EditarToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
+        Me.EditarToolStripMenuItem.Text = "Editar"
         '
         'ToolStripMenuItem3
         '
@@ -345,8 +369,8 @@ Partial Class FormCadConsignees
         '
         Me.ExcluirToolStripMenuItem.Image = Global.SMS.My.Resources.Resources.icons8_cancelar_48
         Me.ExcluirToolStripMenuItem.Name = "ExcluirToolStripMenuItem"
-        Me.ExcluirToolStripMenuItem.Size = New System.Drawing.Size(68, 20)
-        Me.ExcluirToolStripMenuItem.Text = "Delete"
+        Me.ExcluirToolStripMenuItem.Size = New System.Drawing.Size(69, 20)
+        Me.ExcluirToolStripMenuItem.Text = "Excluir"
         '
         'GroupBox2
         '
@@ -380,7 +404,7 @@ Partial Class FormCadConsignees
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage1.Size = New System.Drawing.Size(1326, 224)
         Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Consignee Contacts"
+        Me.TabPage1.Text = "Contatos dos Parceiros"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
         'DataGridViewContact
@@ -465,7 +489,7 @@ Partial Class FormCadConsignees
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage2.Size = New System.Drawing.Size(1326, 224)
         Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Address to deliver"
+        Me.TabPage2.Text = "Endereços de Entrega"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
         'DataGridViewAdress
@@ -576,7 +600,7 @@ Partial Class FormCadConsignees
         'ColumnANome
         '
         Me.ColumnANome.DataPropertyName = "NAME"
-        Me.ColumnANome.HeaderText = "Consignee Name"
+        Me.ColumnANome.HeaderText = "Nome do Destinatário"
         Me.ColumnANome.Name = "ColumnANome"
         Me.ColumnANome.ReadOnly = True
         Me.ColumnANome.Width = 250
@@ -584,7 +608,7 @@ Partial Class FormCadConsignees
         'ColumnAEndereco
         '
         Me.ColumnAEndereco.DataPropertyName = "ENDERECO"
-        Me.ColumnAEndereco.HeaderText = "Address"
+        Me.ColumnAEndereco.HeaderText = "Endereço"
         Me.ColumnAEndereco.Name = "ColumnAEndereco"
         Me.ColumnAEndereco.ReadOnly = True
         Me.ColumnAEndereco.Width = 250
@@ -592,7 +616,7 @@ Partial Class FormCadConsignees
         'ColumnANumero
         '
         Me.ColumnANumero.DataPropertyName = "NUMERO"
-        Me.ColumnANumero.HeaderText = "Number"
+        Me.ColumnANumero.HeaderText = "Número"
         Me.ColumnANumero.Name = "ColumnANumero"
         Me.ColumnANumero.ReadOnly = True
         Me.ColumnANumero.Width = 50
@@ -600,7 +624,7 @@ Partial Class FormCadConsignees
         'ColumnAComplemento
         '
         Me.ColumnAComplemento.DataPropertyName = "COMPLEMENTO"
-        Me.ColumnAComplemento.HeaderText = "Complement"
+        Me.ColumnAComplemento.HeaderText = "Complemento"
         Me.ColumnAComplemento.Name = "ColumnAComplemento"
         Me.ColumnAComplemento.ReadOnly = True
         Me.ColumnAComplemento.Width = 150
@@ -608,7 +632,7 @@ Partial Class FormCadConsignees
         'ColumnABairro
         '
         Me.ColumnABairro.DataPropertyName = "BAIRRO"
-        Me.ColumnABairro.HeaderText = "Suburb"
+        Me.ColumnABairro.HeaderText = "Bairro"
         Me.ColumnABairro.Name = "ColumnABairro"
         Me.ColumnABairro.ReadOnly = True
         Me.ColumnABairro.Width = 150
@@ -616,7 +640,7 @@ Partial Class FormCadConsignees
         'ColumnACidade
         '
         Me.ColumnACidade.DataPropertyName = "CIDADE"
-        Me.ColumnACidade.HeaderText = "City"
+        Me.ColumnACidade.HeaderText = "Cidade"
         Me.ColumnACidade.Name = "ColumnACidade"
         Me.ColumnACidade.ReadOnly = True
         Me.ColumnACidade.Width = 150
@@ -627,7 +651,6 @@ Partial Class FormCadConsignees
         Me.ColumnAEstado.HeaderText = "Estado"
         Me.ColumnAEstado.Name = "ColumnAEstado"
         Me.ColumnAEstado.ReadOnly = True
-        Me.ColumnAEstado.Visible = False
         Me.ColumnAEstado.Width = 150
         '
         'ColumnAEmail
@@ -667,34 +690,10 @@ Partial Class FormCadConsignees
         Me.ColumnObs.DataPropertyName = "OBS"
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.ColumnObs.DefaultCellStyle = DataGridViewCellStyle4
-        Me.ColumnObs.HeaderText = "Notes / References"
+        Me.ColumnObs.HeaderText = "Observações / Referencias"
         Me.ColumnObs.Name = "ColumnObs"
         Me.ColumnObs.ReadOnly = True
         Me.ColumnObs.Width = 300
-        '
-        'ColumnCid
-        '
-        Me.ColumnCid.DataPropertyName = "ID"
-        Me.ColumnCid.HeaderText = "id"
-        Me.ColumnCid.Name = "ColumnCid"
-        Me.ColumnCid.ReadOnly = True
-        Me.ColumnCid.Visible = False
-        '
-        'ColumnConsigness
-        '
-        Me.ColumnConsigness.DataPropertyName = "NOME"
-        Me.ColumnConsigness.HeaderText = "Consignees"
-        Me.ColumnConsigness.Name = "ColumnConsigness"
-        Me.ColumnConsigness.ReadOnly = True
-        Me.ColumnConsigness.Width = 300
-        '
-        'ColumnDescrConsig
-        '
-        Me.ColumnDescrConsig.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.ColumnDescrConsig.DataPropertyName = "DESCRICAO"
-        Me.ColumnDescrConsig.HeaderText = "Consignees Description"
-        Me.ColumnDescrConsig.Name = "ColumnDescrConsig"
-        Me.ColumnDescrConsig.ReadOnly = True
         '
         'FormCadConsignees
         '
@@ -702,7 +701,7 @@ Partial Class FormCadConsignees
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.Silver
-        Me.ClientSize = New System.Drawing.Size(1369, 741)
+        Me.ClientSize = New System.Drawing.Size(1369, 786)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
@@ -786,6 +785,9 @@ Partial Class FormCadConsignees
     Friend WithEvents ComboBoxConsignees As ComboBox
     Friend WithEvents Label3 As Label
     Friend WithEvents TextBoxDescricao As TextBox
+    Friend WithEvents ColumnCid As DataGridViewTextBoxColumn
+    Friend WithEvents ColumnConsigness As DataGridViewTextBoxColumn
+    Friend WithEvents ColumnDescrConsig As DataGridViewTextBoxColumn
     Friend WithEvents ColumnAid As DataGridViewTextBoxColumn
     Friend WithEvents ColumnANome As DataGridViewTextBoxColumn
     Friend WithEvents ColumnAEndereco As DataGridViewTextBoxColumn
@@ -799,7 +801,4 @@ Partial Class FormCadConsignees
     Friend WithEvents ColumnATel2 As DataGridViewTextBoxColumn
     Friend WithEvents ColumnATel3 As DataGridViewTextBoxColumn
     Friend WithEvents ColumnObs As DataGridViewTextBoxColumn
-    Friend WithEvents ColumnCid As DataGridViewTextBoxColumn
-    Friend WithEvents ColumnConsigness As DataGridViewTextBoxColumn
-    Friend WithEvents ColumnDescrConsig As DataGridViewTextBoxColumn
 End Class
